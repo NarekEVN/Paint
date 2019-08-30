@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paint</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		button{
+			border: none;
+			background: #c0392b;
+			font-size: 25px;
+			position: absolute;
+			margin-left: 25px;
+			color: #fff;
+			width: 100px;
+			border-radius: 5px;
+		}
+		.colors{
+			position: absolute;
+			top: 50px;
+			left: 600px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.colors button{
+			position: static;
+		}
+		.colors button:nth-child(1){
+			background: #e74c3c;
+		}
+		.colors button:nth-child(2){
+			background: #2ecc71;
+		}
+		.colors button:nth-child(3){
+			background: #2980b9;
+		}
+		.colors button:nth-child(4){
+			background: #f1c40f;
+		}
+		.colors button:nth-child(5){
+			background: #fff;
+			border: 1px solid;
+			color: #000;
+		}
+		.colors button:nth-child(6){
+			background: #000;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="600" height="600"></canvas>
+
+	<button class="clear">Clear</button>
+	<div class="colors">
+		<button class="color" value="#e74c3c">Red</button>
+		<button class="color" value="#2ecc71">Green</button>
+		<button class="color" value="#2980b9">Blue</button>
+		<button class="color" value="#f1c40f">Yellow</button>
+		<button class="color" value="#fff">White</button>
+		<button class="color" value="#000">Eraser</button>
+	</div>
+</body>
+	<script src="js/script.js"></script>
+</html>
